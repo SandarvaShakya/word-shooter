@@ -5,7 +5,8 @@
 }
 
 body{
-    background-color: #f1f1f1;
+    background-color: #696969;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container{
@@ -19,11 +20,34 @@ body{
 
 .center{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #canvas{
     margin-top: 3rem;
-    border: 1px solid red;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+}
+
+.game-heading{
+    margin-top: 3rem;
+    color: white;
+}
+
+.game-text{
+    color: white;
+}
+
+#player-input{
+    border: none;
+    border-radius: 8px;
+    width: 50%;
+    padding: 1rem;
+    background-color: #353535;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
 }
