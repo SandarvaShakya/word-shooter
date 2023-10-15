@@ -3,8 +3,9 @@ class Word {
         this.word = word
         this.x = x
         this.y = y
+        this.width = Math.ceil(context.measureText(this.word).width)
         this.color = color
-        this.dy = 5
+        this.dy = 3
     }
 
     draw(){

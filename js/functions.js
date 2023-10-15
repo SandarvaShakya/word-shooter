@@ -10,3 +10,10 @@ const generateRandomWord = () => {
         word = new Word(wordText, -textWidth, canvas.height / 2 - 32, wordColor)
     }, INTERVAL)
 }
+
+const generateWord = () => {
+    wordText = generateRandom(WORDS)
+    textWidth = Math.floor(context.measureText(wordText).width)
+    wordColor = getRandomColor()
+    word = new Word(wordText, -textWidth, canvas.height / 2 - 32, wordColor)
+}
